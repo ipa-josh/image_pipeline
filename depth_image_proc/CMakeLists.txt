@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 project(depth_image_proc)
 
-find_package(catkin REQUIRED cv_bridge image_geometry image_transport message_filters nodelet pcl_conversions pcl_ros sensor_msgs stereo_msgs tf)
+find_package(catkin REQUIRED cv_bridge image_geometry image_transport message_filters nodelet pcl_conversions pcl_ros sensor_msgs stereo_msgs tf cob_3d_mapping_common)
 
 catkin_package(
     INCLUDE_DIRS include
@@ -21,6 +21,7 @@ include_directories(include
 add_library(${PROJECT_NAME} src/nodelets/convert_metric.cpp
                              src/nodelets/disparity.cpp
                              src/nodelets/point_cloud_xyz.cpp
+                             src/nodelets/point_cloud_xyza.cpp
                              src/nodelets/point_cloud_xyzrgb.cpp
                              src/nodelets/register.cpp
 )

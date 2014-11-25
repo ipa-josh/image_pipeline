@@ -24,6 +24,14 @@
     </description>
   </class>
 
+  <class name="depth_image_proc/point_cloud_xyza"
+	 type="depth_image_proc::PointCloudXyzaNodelet"
+	 base_class_type="nodelet::Nodelet">
+    <description>
+      Nodelet to convert depth image and amplitude image to XYZA point cloud.
+    </description>
+  </class>
+
   <class name="depth_image_proc/point_cloud_xyzrgb"
 	 type="depth_image_proc::PointCloudXyzrgbNodelet"
 	 base_class_type="nodelet::Nodelet">
